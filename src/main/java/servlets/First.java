@@ -8,6 +8,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
+//Below is the first method to create Servlet by implementing Servlet interface and overriding all its methods 
 
 @WebServlet("/first")
 //above annotation is used to directly map servlet with url basepath/x i.e FirstProject/first url

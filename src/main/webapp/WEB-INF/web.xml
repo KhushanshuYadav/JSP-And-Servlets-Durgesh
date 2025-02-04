@@ -12,7 +12,7 @@
   </welcome-file-list>
   
   
-  <!-- To configure a servlet we need to tags 1. tells about servlet and 2. maps with the url pattern-->
+  <!-- To configure EACH servlet we need to tags 1. tells about servlet and 2. maps with the url pattern-->
   <servlet>
   
   <servlet-name>second</servlet-name>

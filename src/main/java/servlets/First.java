@@ -11,7 +11,7 @@ import jakarta.servlet.annotation.WebServlet;
 //Below is the first method to create Servlet by implementing Servlet interface and overriding all its methods 
 
 @WebServlet("/first")
-//above annotation is used to directly map servlet with url basepath/x i.e FirstProject/first url
+//above annotation is used to directly map servlet with url basepath/x i.e FirstProject/first url i.e url pattern
 public class First implements Servlet {
 	
 	private ServletConfig servletConfig ;
@@ -22,19 +22,19 @@ public class First implements Servlet {
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
 		this.servletConfig=config;
-		System.out.println("Servlet created");
+		System.out.println("First Servlet created");
 	}
 	
 	@Override
 	public void service(ServletRequest arg0, ServletResponse arg1) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("Recived a request from client");
+		System.out.println("Recived a request from client on first Servlet");
 	}
 
 	@Override
 	public void destroy() {
 		// TODO Auto-generated method stub
-		System.out.println("Servlet destroyed");
+		System.out.println("First Servlet destroyed");
 		
 	}
 	

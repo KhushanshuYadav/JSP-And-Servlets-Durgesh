@@ -25,6 +25,9 @@
   <servlet-name> second</servlet-name>
   <url-pattern>/second</url-pattern>
   
+  <!-- we can map one servlet with many urls by url-pattern tag -->
+  <url-pattern>/secondTest</url-pattern>
+  
   </servlet-mapping>
   
   

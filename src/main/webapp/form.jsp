@@ -12,12 +12,25 @@
 
 <%@ include file="linkMenu.jsp" %>
 
+
+<br>
+<br>
+
+
 <form action="<%= application.getContextPath()%>/third" method="post">
 
-<spacer type="block" width="50" />
+         <label for="fullName">Full Name:</label>
+         <br>
+         <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+         <br>
+         <br>
+         <label for="age">Age:</label>
+         <br>
+         <input type="number" id="age" name="age" placeholder="Enter your age" required min="1">
+         <br>
+         <br>
+         <button type="submit">Submit Form</button>
 
-
-<button type="submit">Submit Form</button>
 
 </form>
 

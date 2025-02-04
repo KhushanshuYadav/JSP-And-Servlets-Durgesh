@@ -1,6 +1,7 @@
 package servlets;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -37,10 +38,25 @@ public class Third extends HttpServlet {
 		//by get parameters method
 		
 		String fullName=req.getParameter("fullName");
-		System.out.println("full name is "+fullName);
+		System.out.println("Full name is "+fullName);
 		
 		String age=req.getParameter("age");
 		System.out.println("Age is "+age);
+		
+		
+		//sending response to client for respective post request
+		
+		//setting up the response as HTML one
+		resp.setContentType("text/HTML");
+		
+		//creating PrintWriter object
+		PrintWriter out=resp.getWriter();
+		
+		//directly writing the response on browser
+		out.println("<h1> Data submitted sucessfully </h1>");
+		out.println("<br>");
+		out.println("<h2>Hello " + fullName + "</h2>");
+		
 		
 		
 		

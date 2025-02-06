@@ -1,5 +1,5 @@
-#JSP and Servlets Learning Project
+# JSP and Servlets Learning Project
 
 This is a Dynamic Web Project.
 
-This is a simple learning Project that I created during the course of learning JSP and Servlets.
+This is a simple learning poject that I created during the course of learning JSP and Servlets.
